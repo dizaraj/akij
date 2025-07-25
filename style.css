@@ -61,12 +61,15 @@ h6 {
     box-shadow: 0 4px 15px rgba(0, 93, 199, 0.3);
 }
 
+.p-none{
+    padding: 0 !important;
+}
 
 .hero {
     background-image: linear-gradient(45deg, rgba(0, 48, 109, 0.8), rgba(0, 93, 199, 0.7)), url('https://akij.net/img/building.jpg');
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
     color: white;
     display: flex;
     align-items: center;
@@ -89,25 +92,21 @@ h6 {
 }
 
 .section-padding {
-    padding: 100px 0;
+    padding-bottom: 40px;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    color: #002349;
-    font-size: 2.5rem;
-}
-
-.white {
-    color: white !important;
+    padding: 40px 30px;
+    font-weight: 500;
+    color: #2E6ABF;
+    font-size: 1.5rem;
 }
 
 .feature-box {
     text-align: center;
-    padding: 30px 20px;
-    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border: 2px solid #386AB1;
     border-radius: 12px;
     transition: all 0.3s ease;
     background-color: #fff;
@@ -122,7 +121,7 @@ h6 {
 .feature-box .icon {
     font-size: 3rem;
     color: #005DC7;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .feature-box h4 {
@@ -131,7 +130,7 @@ h6 {
 }
 
 .about-section {
-    background-color: #fff;
+    background-color: #E7F0FD;
 }
 
 .profile-section {
@@ -152,28 +151,22 @@ h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .company-card:hover {
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
     border-color: #005DC7;
 }
 
 .company-card img {
-    max-height: 60px;
-    width:max-content;
+    height: 60px;
+    width: 100%;
+    object-fit: contain;
     margin-bottom: 15px;
     filter: grayscale(100%);
     opacity: 0.8;
     transition: all 0.3s ease-in-out;
-}
-
-.company-profile-img{
-    height: 160px;
-    width: 160px;
-    margin: 0 auto;
 }
 
 .company-card:hover img {
@@ -205,8 +198,8 @@ h6 {
     background-color: #003d82;
 }
 
-.products-section{
-text-align: center;
+.products-section {
+    text-align: center;
 }
 
 .product-item {
@@ -224,10 +217,9 @@ text-align: center;
 }
 
 .board-section {
-    background-image: linear-gradient(45deg, rgba(0, 48, 109, 0.4), rgba(0, 93, 199, 0.4)), url('https://akij.net/img/building.jpg');
+    background-image: linear-gradient(90deg, rgba(0, 0, 255, .4), rgba(0, 0, 255, .4)), url('https://akij.net/img/building.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     text-align: center;
 }
 
@@ -390,9 +382,10 @@ text-align: center;
     margin-bottom: 0.75rem;
     margin-left: 10px;
 }
+
 .footer-links img {
-width: 150px;
-height: auto;
+    width: 150px;
+    height: auto;
 }
 
 .footer .social-icons a {
