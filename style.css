@@ -30,19 +30,33 @@ h6 {
 }
 
 .navbar-brand img {
-    height: 40px;
+    height: 60px;
     margin-right: 10px;
 }
 
-.nav-link {
-    color: #0056b3 !important;
+.top-link {
+    color: #000 !important;
     font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 400;
     margin: 0 0.5rem;
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-    color: #003d82 !important;
+.dropdown-item{
+    line-height: 2.5;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.dropdown-item:hover {
+    color: white;
+    background-color: #005DC7 !important;
 }
 
 .btn-primary {
@@ -420,4 +434,28 @@ h6 {
 
 .store-badge:hover {
     opacity: 1;
+}
+
+/* --- Back to Top Button --- */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+    background-color: #1787FF;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
+    z-index: 99;
+}
+
+#backToTopBtn:hover {
+    background-color: #004b9e;
 }
