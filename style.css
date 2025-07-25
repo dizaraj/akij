@@ -133,6 +133,11 @@ h6 {
     background-color: #E7F0FD;
 }
 
+.about-section h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .profile-section {
     background-color: #f8f9fa;
 }
