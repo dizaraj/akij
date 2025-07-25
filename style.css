@@ -1,0 +1,425 @@
+/* Custom CSS for styling not covered by Bootstrap */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    background-color: #fdfdff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #002349;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #0056b3 !important;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #0056b3 !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #003d82 !important;
+}
+
+.btn-primary {
+    background-color: #005DC7;
+    border-color: #005DC7;
+    padding: 12px 30px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #004b9e;
+    border-color: #004b9e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 93, 199, 0.3);
+}
+
+
+.hero {
+    background-image: linear-gradient(45deg, rgba(0, 48, 109, 0.8), rgba(0, 93, 199, 0.7)), url('https://akij.net/img/building.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 20px auto 30px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #002349;
+    font-size: 2.5rem;
+}
+
+.white {
+    color: white !important;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    border-color: #005DC7;
+}
+
+.feature-box .icon {
+    font-size: 3rem;
+    color: #005DC7;
+    margin-bottom: 1rem;
+}
+
+.feature-box h4 {
+    font-size: 2rem;
+    color: #005DC7;
+}
+
+.about-section {
+    background-color: #fff;
+}
+
+.profile-section {
+    background-color: #f8f9fa;
+}
+
+/* --- Company Profile Slider --- */
+.company-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 15px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease-in-out;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+    border-color: #005DC7;
+}
+
+.company-card img {
+    max-height: 60px;
+    width:max-content;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.company-profile-img{
+    height: 160px;
+    width: 160px;
+    margin: 0 auto;
+}
+
+.company-card:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.company-card h6 {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #005DC7;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #005DC7;
+    opacity: 1;
+}
+
+/* --- End Company Profile Slider --- */
+
+
+.businesses-section {
+    background-color: #003d82;
+}
+
+.products-section{
+text-align: center;
+}
+
+.product-item {
+    text-align: center;
+}
+
+.product-item img {
+    max-height: 150px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+.board-section {
+    background-image: linear-gradient(45deg, rgba(0, 48, 109, 0.4), rgba(0, 93, 199, 0.4)), url('https://akij.net/img/building.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.board-member.card {
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.board-member.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.board-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    padding: 6px;
+    border: 1px solid #EBDB71;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- News Section --- */
+.news-section {
+    background-color: #E4F1FE;
+}
+
+.news-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100%;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.news-card-img-container {
+    overflow: hidden;
+    height: 300px;
+}
+
+.news-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.news-card:hover .news-card-img {
+    transform: scale(1.1);
+}
+
+.news-card-body {
+    padding: 25px;
+}
+
+.news-card-date {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.news-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+    color: #002349;
+}
+
+.news-card-text {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.news-card-link {
+    color: #005DC7;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.news-card-link i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.news-card-link:hover {
+    color: #003d82;
+}
+
+.news-card-link:hover i {
+    transform: translateX(5px);
+}
+
+/* --- End News Section --- */
+
+
+.newsletter-section {
+    background-image: linear-gradient(45deg, rgba(0, 48, 109, 0.5), rgba(0, 93, 199, 0.5)), url('https://akij.net/img/building.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.newsletter-section .form-control {
+    height: 50px;
+}
+
+.footer {
+    background-color: #005DC7;
+    color: #fff;
+    padding: 80px 0 20px;
+}
+
+.footer-logo {
+    height: 50px;
+    /* filter: brightness(0) invert(1);
+    opacity: 0.8; */
+}
+
+.footer h5 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+    margin-left: 10px;
+}
+.footer-links img {
+width: 150px;
+height: auto;
+}
+
+.footer .social-icons a {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.footer .social-icons a:hover {
+    background-color: #002349;
+    border-color: #002349;
+    color: #fff;
+}
+
+.store-badge {
+    height: 50px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.store-badge:hover {
+    opacity: 1;
+}
